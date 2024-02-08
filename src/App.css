@@ -1,38 +1,149 @@
-.App {
+/*----------- todo list--------------- */
+
+.task1{
   text-align: center;
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task1 input{
+  border: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task1 h5{
+  background-color: #AF7EEB;
+  color: white;
+  padding: 10px 0px;
+  border-radius: 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.task1 .textbox{
+  /* background-color: rgb(125, 75, 75); */
+  width: 100%;
+  border-radius: 5px;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.val:focus-visible{
+  outline: none;
+}
+.textbox .val{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+} 
+.textbox .add{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #AF7EEB;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.task1 .fun{
+  /* margin-top: 40px; */
+  width: 100%;
+  padding: 40px 0px;
+}
+.fun .search :first-child{
+  width: 316px;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.fun .search :last-child{
+  background-color: #AF7EEB;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-left: 12px;
+}
+.fun .list{
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+}
+.fun .list input{
+  background-color: #AF7EEB;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+.table .tr{
+  background-color: rgb(255, 255, 255);
+  color: #AF7EEB;
+  border-radius: 4px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.table .td{
+  display: flex;
+}
+.td input{
+  margin-right: 10px;
+}
+.td :first-child{
+  margin-left: 10px;
+}
+.td .btn{
+  background-color: #AF7EEB;
+  color: white;
+}
+.td div{
+  display: flex;
+  justify-content: end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tic{
+  text-align: center;
+}
+.tic .box input{
+  color: rgb(255, 255, 255);
+  border-color: #216EFC;
+  background-color: #212845;
+}
+.tic .box{
+  width: 400px;
+  height:400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 50px;
+}
+.tic .result,.tic .Restart{
+  padding: 10px 40px;
+  background-color: #212845;
+  border: 2px solid #216EFC;
+  width: fit-content;
+  margin: auto;
+  margin-top: 40px;
+  color: white;
+  font-size: 20px;
+}
+
+
+
+/* --------Number Puzzle -------------*/
+.number_box
+{
+  width: fit-content;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+  font-size: 18px;
+}
+.number_box p{
+  padding: 55px 60px;
+  background-color: #212845;
+  color: white;
+  border: 1px solid white;
+}
+.reset{
+    color: white;
+    background-color: #212845;
+    margin-top: 10px; 
 }
